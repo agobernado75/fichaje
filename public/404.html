@@ -4,13 +4,12 @@
     <meta charset="utf-8" />
     <title>Redirigiendo</title>
     <script>
-      const base = '/fichaje/'
-      const ruta = location.pathname.replace(base, '')
-      const destino = ruta && ruta !== '404.html' ? base + ruta : base
+      const ruta = location.pathname
+      const destino = ruta && ruta !== '404.html' ? ruta : '/'
       location.replace(destino)
     </script>
   </head>
   <body>
-    <a href="/fichaje/">Ir a la aplicación</a>
+    <a href="/">Ir a la aplicación</a>
   </body>
 </html>

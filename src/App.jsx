@@ -16,7 +16,7 @@ function AppRoutes() {
 
   if (!sesion) {
     return (
-      <BrowserRouter basename="/fichaje">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/acceso" element={<AccesoAdmin />} />
@@ -31,7 +31,7 @@ function AppRoutes() {
   }
 
   return (
-    <BrowserRouter basename="/fichaje">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<EscanerQR />} />
         <Route path="/admin" element={<PanelAdmin />} />
